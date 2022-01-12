@@ -14,7 +14,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         UserBuilder userBuilder = User.withDefaultPasswordEncoder();//используем этот метод временно
 
         auth.inMemoryAuthentication()
-                .withUser(userBuilder.username("zaur").password("zaur").roles("EMPLOYEE"))
+                .withUser(userBuilder.username("vanrar").password("vanrar").roles("EMPLOYEE"))
                 .withUser(userBuilder.username("elena").password("elena").roles("HR"))
                 .withUser(userBuilder.username("ivan").password("ivan").roles("MANAGER", "HR"));
 
